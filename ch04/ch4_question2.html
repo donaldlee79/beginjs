@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chapter 4, Question 2</title>
+    </head>
+    <body>
+        <script>
+            function getTimeTable(timeTableNumber, startNumber, endNumber)
+            {
+                document.write("Time Table Number: " + timeTableNumber + "<br />");
+                document.write("Start Number: " + startNumber + "<br />");
+                document.write("End Number: " + endNumber + "<br />");
+
+                if(startNumber <= endNumber)
+                {
+                    for (var loopCounter = startNumber; loopCounter <= endNumber; loopCounter++)
+                    {
+                        document.write(timeTableNumber + " * " + loopCounter + " = " + (timeTableNumber * loopCounter) + "<br />");
+                    }
+                }
+                else
+                {
+                    for (var loopCounter = startNumber; loopCounter >= endNumber; loopCounter--)
+                    {
+                        document.write(timeTableNumber + " * " + loopCounter + " = " + (timeTableNumber * loopCounter) + "<br />");
+                    }
+
+                }
+                
+            }
+
+            var timeTableNum;
+            var startNum;
+            var endNum;
+
+            while (timeTableNum != -1)
+            {
+                timeTableNum = parseInt(prompt("Enter time table number. (Enter \"-1\" to quit.)", ""));
+
+                while (isNaN(timeTableNum))
+                {
+                    timeTableNum = parseInt(prompt("Invalid Number! Enter a valid time table number.", ""));
+                }
+
+                if (timeTableNum == -1)
+                {
+                    document.write("You quit.");
+                    continue;
+                }
+
+                startNum = parseInt(prompt("Enter start number.", ""));
+
+                while (isNaN(startNum))
+                {
+                    startNum = parseInt(prompt("Invalid Number! Enter a valid start number.", ""));
+                }
+
+                endNum = parseInt(prompt("Enter end number", ""));
+
+                while (isNaN(endNum))
+                {
+                    endNum = parseInt(prompt("Invalid Number! Enter a valid end number", ""));
+                }
+
+                getTimeTable(timeTableNum, startNum, endNum);
+            }
+        </script>
+    </body>
+</html>

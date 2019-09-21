@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chapter 4, Question 1</title>
+    </head>
+    <body>
+        <script>
+            function getTimeTable(timeTableNumber, startNumber, endNumber)
+            {
+                for (var loopCounter = startNumber; loopCounter <= endNumber; loopCounter++)
+                {
+                    document.write(timeTableNumber + " * " + loopCounter + " = " + (timeTableNumber * loopCounter) + "<br />");
+                }
+            }
+
+            var timeTableNum = parseInt(prompt("Enter time table number.", ""));
+            var startNum = parseInt(prompt("Enter start number.", ""));
+            var endNum = parseInt(prompt("Enter end number", ""));
+
+            getTimeTable(timeTableNum, startNum, endNum);
+        </script>
+    </body>
+</html>
