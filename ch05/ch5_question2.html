@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chapter 5, Question 2</title>
+    </head>
+    <body>
+        <script>
+            var names = [];
+            var name;
+
+            do 
+            {  
+                name = prompt("Enter a name (leave blank to quit).", "");
+                names.push(name);
+            } 
+            while (name != "");
+
+            names.sort();
+            
+            document.write(names.join("<br />"));
+        </script>
+    </body>
+</html>
