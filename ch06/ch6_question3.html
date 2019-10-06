@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chapter 6, Question 3</title>
+    </head>
+    <body>
+        <script>
+            var myString = prompt("Enter some text.", "");
+            var myRegExp = /\bcat|hat\b/g;
+            myString = myString.replace(myRegExp, "****");
+            document.write(myString);
+        </script>
+    </body>
+</html>
