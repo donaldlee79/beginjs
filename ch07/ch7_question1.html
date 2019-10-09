@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chapter 7, Question 1</title>
+    </head>
+    <body>
+        <script>
+            birthMonth = parseInt(prompt("Enter your birthday month number", ""));
+            birthDay = parseInt(prompt("Enter your birthday day number", ""));
+            birthYear = parseInt(prompt("Enter your birthday year number", ""));
+
+            birthDate = new Date();
+
+            birthDate.setMonth(birthMonth - 1);
+            birthDate.setDate(birthDay);
+            birthDate.setYear(birthYear);
+            
+            dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+            document.write("You were born on a " + dayNames[birthDate.getDay()]);
+        </script>
+    </body>
+</html>
