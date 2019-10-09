@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chapter 7, Question 2</title>
+    </head>
+    <body>
+        <div id="output"></div>
+        <script>
+            function updateTime()
+            {
+                date = new Date();
+                document.getElementById("output").innerHTML = "Hours: " + date.getHours() + ", Minutes: " + date.getMinutes() + ", Seconds: " + date.getSeconds();
+            }
+
+            setInterval(updateTime, 1000);
+        </script>
+    </body>
+</html>
