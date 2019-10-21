@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chapter 9, Question 1</title>
+    </head>
+    <body>
+        <script>
+            var tableElem = document.createElement("table");
+            var trElem1 = document.createElement("tr");
+            var trElem2 = document.createElement("tr");
+            var trElem3 = document.createElement("tr");
+            var tdText1 = document.createTextNode("Car");
+            var tdText2 = document.createTextNode("Top Speed");
+            var tdText3 = document.createTextNode("Price");
+            var tdText4 = document.createTextNode("Chevrolet");
+            var tdText5 = document.createTextNode("120mph");
+            var tdText6 = document.createTextNode("$10,000");
+            var tdText7 = document.createTextNode("Pontiac");
+            var tdText8 = document.createTextNode("140mph");
+            var tdText9 = document.createTextNode("$20,000");
+            var tdElem1 = document.createElement("td");
+            var tdElem2 = document.createElement("td");
+            var tdElem3 = document.createElement("td");
+            var tdElem4 = document.createElement("td");
+            var tdElem5 = document.createElement("td");
+            var tdElem6 = document.createElement("td");
+            var tdElem7 = document.createElement("td");
+            var tdElem8 = document.createElement("td");
+            var tdElem9 = document.createElement("td");
+
+            tdElem1.appendChild(tdText1);
+            tdElem2.appendChild(tdText2);
+            tdElem3.appendChild(tdText3);
+            tdElem4.appendChild(tdText4);
+            tdElem5.appendChild(tdText5);
+            tdElem6.appendChild(tdText6);
+            tdElem7.appendChild(tdText7);
+            tdElem8.appendChild(tdText8);
+            tdElem9.appendChild(tdText9);
+
+            trElem1.appendChild(tdElem1);
+            trElem1.appendChild(tdElem2);
+            trElem1.appendChild(tdElem3);
+
+            trElem2.appendChild(tdElem4);
+            trElem2.appendChild(tdElem5);
+            trElem2.appendChild(tdElem6);
+
+            trElem3.appendChild(tdElem7);
+            trElem3.appendChild(tdElem8);
+            trElem3.appendChild(tdElem9);
+
+            tableElem.appendChild(trElem1);
+            tableElem.appendChild(trElem2);
+            tableElem.appendChild(trElem3);
+
+            document.body.appendChild(tableElem);
+        </script>
+    </body>
+</html>
