@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chapter 10, Example 21</title>
+        <style>
+            [data-drop-target] {
+                height: 400px;
+                width: 200px;
+                margin: 2px;
+                background-color: gainsboro;
+                float: left;
+            }
+
+            .drag-enter {
+                border: 2px dashed #000;
+            }
+
+            .box {
+                width: 200px;
+                height: 200px;
+            }
+
+            .navy {
+                background-color: navy;
+            }
+
+            .red {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div data-drop-target="true">
+            <div id="box1" draggable="true" class="box navy"></div>
+            <div id="box2" draggable="true" class="box red"></div>
+        </div>
+        
+    </body>
+</html>
