@@ -36,5 +36,15 @@ var evt = {
         {
             e.returnValue = false;
         }
+    },
+    isOldIE: function(e) {
+        if (typeof document.addListener == "undefined")
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
     }
 };
